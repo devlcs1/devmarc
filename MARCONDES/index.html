@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Turismo em Nova Veneza</title>
+</head>
+
+<body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(function () {
+                    console.log('Service Worker Registred');
+                })
+                .catch(function () {
+                    console.log('Service Worker Falied');
+                });
+        }
+    </script>
+    <header class="cabecalho">
+    </header>
+    <div class="container">
+        <div class="turismo">
+            <h1>Pontos turísticos de Nova Veneza - SC</h1>
+            <div class="area-stop">
+                <div class="stop stop-one">
+                    <h4 class="title-stop">Ponte dei Morosi</h4>
+                    <img src="img/ponte.png" alt="Ponte dei Morosi">
+                    <span class="history">
+                        Ponte Dei Morosi é uma passarela, que no dialeto vêneto significa Ponte dos Namorados, 
+                        é uma alusão à primeira ponte de madeira construída em 1936. A romântica ponte foi ponto 
+                        de encontro de várias gerações, testemunhado pelos jovens da época.	
+                    </span>
+                </div>
+                <div class="stop stop-two">
+                    <h4 class="title-stop">Praça Humberto Bertoluzzi</h4>
+                    <img src="img/praca.png" alt="Praça Humberto Bertoluzzi">
+                    <span class="history">
+                        A charmosa praça atrai turistas e moradores que encontram no espaço, 
+                        inspirado nas pequenas praças italianas com flores e arandelas, um local 
+                        para passar o tempo, assistir a apresentações no coreto, jogar mora 
+                        (típico jogo da cultura italiana) e também para aproveitar os restaurantes 
+                        que existem no entorno.
+                </div>
+                <div class="stop stop-three">
+                    <h4 class="title-stop">Gôndola Lucille</h4>
+                    <img src="img/gondola.png" alt="Gôndola">
+                    <span class="history">
+                        A Gôndola de Nova Veneza chegou em 2006 e foi um presente do Governo Vêneto 
+                        como forma de aproximar os laços entre Veneza, na Itália, e Nova Veneza, no Brasil.
+                        Existem apenas quatro gôndolas doadas oficialmente pelo governo de Veneza, 
+                        na Itália: uma em Toronto, no Canadá; outra em São Petersburgo, na Rússia; 
+                        a terceira em Pequim, na China; e a quarta em Nova Veneza, Santa Catarina, 
+                        Brasil, que completou 10 anos em solo brasileiro em 2016 e foi um dos motivos 
+                        pelos crescimento do turismo no município. A gôndola, de nome Lucille, chegou 
+                        em 2006. Foi utilizada nos canais de Veneza antes de ser doada e é 100% artesanal, 
+                        fabricada por um canteiro que tem mais de 700 anos e simboliza uma aproximação entre 
+                        as cidades.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
